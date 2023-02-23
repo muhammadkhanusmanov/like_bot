@@ -20,7 +20,7 @@ def hello():
     elif request.method == "POST":
         data = request.get_json(force = True)
         
-        dispacher: Dispatcher = Dispatcher(bot, None, workers=0)
+        dispacher: Dispatcher = Dispatcher(bot, update_queue=None, workers=0)
         update:Update = Update.de_json(data, bot)
     
         #update 
