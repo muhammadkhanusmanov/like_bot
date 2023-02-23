@@ -1,7 +1,7 @@
 import requests
 import os
 
-url = 'https://like_bot_tg.pythonanywhere.com/webhook'
+url = 'https://likeBotTg.pythonanywhere.com/webhook'
 
 Token = os.environ["TOKEN"]
 
